@@ -1,0 +1,24 @@
+
+body {
+    position: relative;
+    background-color: #fff0f5; /*#fbe6ee*/
+    text-align: center;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+}
+
+h1 {
+    color: #e3256b;
+    font-size: 175px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-left: 60px;
+    height: 100px;
+    color: #e3256b;
+    width: 160px;
+    font-size: 25px;
+}

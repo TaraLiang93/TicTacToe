@@ -1,0 +1,58 @@
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    position: relative;
+    text-align: center;
+    background-color: #fff0f5; /*#fbe6ee*/
+}
+
+h1 {
+    color: #e3256b;
+    font-size: 1000%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bottom-element {
+    background-color: #fbe6ee;
+}
+
+.bottom-element button {
+    color: #e3256b;
+    font-size: 20px;
+}
+
+.board {
+    width: 25%;
+    display: block;
+    margin: auto;
+
+}
+
+.board button {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    font-size: 500%;
+    color: #fff0f5;
+    background-color: #e3256b;
+}
+
+.gameSym {
+    margin-top: 5px;
+    background-color: #fbe6ee;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #e3256b;
+}
+
+#O {
+    display: inline;
+    margin-right: 30%;
+    background-color: #fbe6ee;
+}
+
+#X {
+    display: inline;
+}
+
+

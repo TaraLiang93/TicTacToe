@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>LogIn</servlet-name>
+        <servlet-class>com.appspot.tictactoe.LogIn</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogIn</servlet-name>
+        <url-pattern>/LogIn</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <servlet-class>com.appspot.tictactoe.LogOut</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/LogOut</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>play</servlet-name>
+        <servlet-class>com.appspot.tictactoe.play</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>play</servlet-name>
+        <url-pattern>/play</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>setUserName</servlet-name>
+        <servlet-class>com.appspot.tictactoe.setName</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>setUserName</servlet-name>
+        <url-pattern>/blah</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateScore</servlet-name>
+        <servlet-class>com.appspot.tictactoe.updateScore</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateScore</servlet-name>
+        <url-pattern>/UpdateScore</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getScore</servlet-name>
+        <servlet-class>com.appspot.tictactoe.getScore</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getScore</servlet-name>
+        <url-pattern>/GetScore</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.appspot.tictactoe.OfyHelper</listener-class>
+    </listener>
+
+    <welcome-file-list>
+        <welcome-file>Welcome.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

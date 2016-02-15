@@ -1,0 +1,37 @@
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    position: relative;
+    background-color: #fff0f5; /*#fbe6ee*/
+    color: #e3256b;
+}
+
+h1 {
+    text-align: center;
+    color: #e3256b;
+    font-size: 1000%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#init-top {
+    background-color: #fddde6;
+}
+
+#table {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+td {
+    font-size: 120%;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    color: #e3256b;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+}
