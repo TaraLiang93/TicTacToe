@@ -29,9 +29,13 @@ td {
 }
 
 button {
-    text-align: center;
     color: #e3256b;
     font-size: 120%;
-    display: block;
-    margin: auto;
+}
+
+#logout{
+    display: inline;
+    margin-left: 33%;
+    margin-right: 25%
+
 }

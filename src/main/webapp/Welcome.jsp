@@ -21,7 +21,7 @@
 
 <div id="button">
     <button id="play">Play</button>
-    <button id="signIn">Sign In</button>
+    <!--<button id="signIn">Sign In</button>-->
     <button id="leaderBoard">Leaderboard</button>
 </div>
 </table>

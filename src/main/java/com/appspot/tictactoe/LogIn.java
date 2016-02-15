@@ -31,7 +31,6 @@ public class LogIn extends HttpServlet {
 
         UserService userSer = UserServiceFactory.getUserService();
         User currentUser = userSer.getCurrentUser();
-        req.getSession().setAttribute("user", currentUser);
         String loginUrl = userSer.createLoginURL("../blah");
         //String logoutUrl = userSer.createLogoutURL("/");
         res.sendRedirect(loginUrl);

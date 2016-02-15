@@ -13,7 +13,7 @@ var setIntID;                                   //store the id of the set interv
 function playAgain(decision, userWin) {
 
     if (decision === true) {
-        window.location = "gameBoard.jsp";
+        window.location = "/jsp/gameBoard.jsp";
     }
     if (userWin === true) {
         $.post("/UpdateScore"); //update the user's score in datastore
@@ -131,7 +131,7 @@ $(document).ready(function () {
         var leave = confirm("Are you sure, if you leave all the data will be lost.");
         if (leave === true) {
             //$.post("/GetScore"); //get all the users score in datastore
-            window.location = "leaderboard.jsp";
+            window.location = "/jsp/leaderboard.jsp";
         }
     });
 

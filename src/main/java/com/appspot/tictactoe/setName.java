@@ -4,6 +4,7 @@ import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,6 +28,11 @@ public class setName extends HttpServlet {
         UserService userSer = UserServiceFactory.getUserService();
         User currentUser = userSer.getCurrentUser();
         req.getSession().setAttribute("user", currentUser);
-        res.sendRedirect("../jsp/leaderboard.jsp");
+
+        String nextJSP = "/jsp/leaderboard.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        dispatcher.forward(req,res);
+
+        //res.sendRedirect("../jsp/leaderboard.jsp");
     }
 }

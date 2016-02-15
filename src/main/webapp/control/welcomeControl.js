@@ -11,6 +11,7 @@ $(document).ready(function () {
     });
 
     $("#signIn").click(function () {
+        $(location).attr("href", "/LogOut");
         $(location).attr("href", "/LogIn");
     });
 

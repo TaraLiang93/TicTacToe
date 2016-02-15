@@ -5,6 +5,7 @@ import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -29,10 +30,18 @@ public class play extends HttpServlet {
 
 
         if (currentUser == null) {
-            res.sendRedirect("../LogIn");
+            String nextJSP = "/LogIn";
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+            dispatcher.forward(req,res);
+            //res.sendRedirect("../LogIn");
         } else {
             req.getSession().setAttribute("user", currentUser);
-            res.sendRedirect("../jsp/gameBoard.jsp");
+
+            String nextJSP = "/jsp/gameBoard.jsp";
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+            dispatcher.forward(req,res);
+
+            //res.sendRedirect("../jsp/gameBoard.jsp");
         }
         //String loginUrl = userSer.createLoginURL("../jsp/gameBoard.jsp");
         //String logoutUrl = userSer.createLogoutURL("/");

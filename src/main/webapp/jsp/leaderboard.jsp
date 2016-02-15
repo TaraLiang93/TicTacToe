@@ -25,12 +25,16 @@
     <jsp:include page="/GetScore"/>
 </table>
 
+<button id="logout" onclick="logout()">Sign Out</button>
 <button onclick="play()">Go to Play</button>
 
 </body>
 </html>
 
 <script>
+    function logout(){
+        $(location).attr("href", "/LogOut");
+    }
     function play() {
         window.location = "../play";
     }
