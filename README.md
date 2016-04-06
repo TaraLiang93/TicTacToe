@@ -1,7 +1,5 @@
 Tara Liang
-108789340
-2/15/206
 
+A quick project to learn Maven, Google app engine, and datastore.
 
 Tic-Tac-Toe: http://huiliang-tic-tac-toe.appspot.com/
-
