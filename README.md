@@ -1,6 +1,6 @@
 Tara Liang
 
-A quick project to learn Maven, Google app engine, Objectify and Datastore.
+A quick game of Tic tac toe to learn Maven, Google app engine, Objectify and Datastore. 
 
 Tool used:
 Javascript,
